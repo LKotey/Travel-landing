@@ -1,0 +1,147 @@
+@import "/src/styles/variables.scss";
+
+.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-top: 10px;
+  position: relative;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+
+  &__top {
+    flex: 0 0 60px;
+  }
+
+  &__content {
+    flex: 1 0 auto;
+  }
+
+  &__arrow {
+    flex: 0 0 60px;
+    align-self: center;
+  }
+
+  &__arrow-svg {
+    animation: arrow 1s ease 0s infinite alternate;
+
+    @keyframes arrow {
+      0% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }
+  }
+}
+
+.header-top {
+  padding: 0.5rem;
+}
+
+.header-menu {
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+  &__item {
+    padding: 5px;
+    white-space: nowrap;
+  }
+  &__link {
+    color: $mainLight;
+    transition: color 0.5s ease 0s;
+    &:hover {
+      color: $acsentColor;
+    }
+  }
+  &__link-burger {
+    display: none;
+    color: $mainLight;
+    transition: color 0.5s ease 0s;
+    &:hover {
+      color: $acsentColor;
+    }
+  }
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $mainLight;
+  text-align: center;
+
+  &__text {
+    font-size: 1.2rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__menu-burger {
+      display: flex;
+    }
+  }
+
+  .header-menu {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    background-color: $lightGreen;
+    border-radius: 0px;
+    padding: 20px;
+    transition: transform 0.5s ease 0s;
+    transform: translateX(0);
+    color: #fff;
+
+    &__list {
+      flex-direction: column;
+      text-align: left;
+      gap: 5px;
+      padding: 50px;
+    }
+    &__item {
+      padding: 10px 5px;
+      white-space: nowrap;
+    }
+    &__link {
+      font-size: 1rem;
+    }
+    &_active {
+      transition: transform 0.7s ease 0s;
+      transform: translateX(-100%);
+    }
+    &__link-burger {
+      display: inline-block;
+      color: $mainLight;
+      transition: color 0.5s ease 0s;
+      &:hover {
+        color: $acsentColor;
+      }
+    }
+  }
+}

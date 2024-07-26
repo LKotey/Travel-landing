@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300,400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.scss" />
+    <title>Vite App</title>
+  </head>
+  <body id="body">
+    <div class="wrapper">
+      <header
+        class="header"
+        style="background-image: url(/img/header-top_bg.webp)"
+      >
+        <div class="container">
+          <div class="header__inner">
+            <section class="header__top header-top">
+              <nav class="header-menu">
+                <ul class="header-menu__list">
+                  <li class="header-menu__item">
+                    <a class="header-menu__link" href="#">Home</a>
+                  </li>
+                  <li class="header-menu__item">
+                    <a class="header-menu__link" href="#tours">Places</a>
+                  </li>
+                  <li class="header-menu__item">
+                    <a class="header-menu__link" href="#contacts">Contacts</a>
+                  </li>
+                  <li class="header-menu__item">
+                    <a href="tel:81234567890" class="header-menu__link"
+                      >+7 (123) 456-78-90</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <button class="button" id="menuBurger" name="menu">
+                <span class="burger">
+                  <svg viewBox="0 0 32 32">
+                    <path
+                      class="line line-top-bottom"
+                      d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+                    ></path>
+                    <path class="line" d="M7 16 27 16"></path>
+                  </svg>
+                </span>
+              </button>
+              <a href="tel:81234567890" class="header-menu__link-burger"
+                >+7 (123) 456-78-90</a
+              >
+            </section>
+            <section class="header__content header-content">
+              <h1 class="header-content__title">Welcome to sunny Cyprus!</h1>
+              <p class="header-content__text">
+                We are here to offer you unforgettable excursions in this
+                delightful land
+              </p>
+            </section>
+            <picture class="header__arrow">
+              <svg
+                class="header__arrow-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  fill="#fff"
+                  d="M32 2C15.432 2 2 15.432 2 32s13.432 30 30 30s30-13.432 30-30S48.568 2 32 2m0 47L16 33.695h10.857V15h10.285v18.695H48z"
+                />
+              </svg>
+            </picture>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__greeting">
+          <div class="container">
+            <div class="main-greeting__inner">
+              <picture class="main-greeting__pictures">
+                <div class="main-greeting__img-box">
+                  <img
+                    class="main-greeting__img"
+                    src="/img/greeting-2.webp"
+                    alt="Sea"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="main-greeting__img-box">
+                  <img
+                    class="main-greeting__img"
+                    src="/img/greeting-3.webp"
+                    alt="Coast"
+                    loading="lazy"
+                  />
+                </div>
+              </picture>
+              <div class="main-greeting__paragrath">
+                <h3 class="main-greeting__subtitle subtitle">
+                  We've already have what you are looking for
+                </h3>
+                <h2 class="main-greeting__title section-title">
+                  Your unforgettable vacation starts here!
+                </h2>
+                <p class="main-greeting__text">
+                  We offer unforgettable journeys on one of the most beautiful
+                  islands in the Mediterranean. Whether you're looking for a
+                  romantic getaway, a family adventure, or an in-depth cultural
+                  exploration, we are here to craft the perfect experience for
+                  you.
+                </p>
+                <p class="main-greeting__text">
+                  Discover luxurious beaches, ancient landmarks, and the genuine
+                  hospitality of Cyprus with a personalized touch.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__tours main-tours" id="tours">
+          <div class="container">
+            <div class="main-tours__inner">
+              <div class="main-tours__content">
+                <h3 class="main-tours__subtitle subtitle">
+                  Discover the beauty of Cyprus with us
+                </h3>
+                <h2 class="main-tours__title section-title">
+                  Here are some places where you can go
+                </h2>
+                <ul class="main-tours__list">
+                  <li class="main-tours__item">
+                    <h4 class="main-tours__item-title">Larnaca</h4>
+                    <p class="main-tours__item-text">
+                      Visit the famous Salt Lake, home to pink flamingos, and
+                      the medieval castle offering stunning sea views.
+                    </p>
+                  </li>
+                  <li class="main-tours__item">
+                    <h4 class="main-tours__item-title">Limassol</h4>
+                    <p class="main-tours__item-text">
+                      Explore the beautiful beaches, stroll through the old town
+                      with its narrow streets, and visit the ancient ruins in
+                      the Kourion Archaeological Park.
+                    </p>
+                  </li>
+                  <li class="main-tours__item">
+                    <h4 class="main-tours__item-title">Omodos</h4>
+                    <p class="main-tours__item-text">
+                      Enjoy the atmosphere of a traditional village, taste the
+                      finest Cypriot wines, and savor traditional dishes in
+                      local taverns.
+                    </p>
+                  </li>
+                  <li class="main-tours__item">
+                    <h4 class="main-tours__item-title">Paphos</h4>
+                    <p class="main-tours__item-text">
+                      Immerse yourself in history by visiting ancient mosaics
+                      and archaeological parks, which are part of the UNESCO
+                      World Heritage list.
+                    </p>
+                  </li>
+
+                  <li class="main-tours__item">
+                    <h4 class="main-tours__item-title">Troodos</h4>
+                    <p class="main-tours__item-text">
+                      Delight in the beauty of mountain landscapes and visit the
+                      famous Kykkos Monastery, one of the most significant on
+                      the island.
+                    </p>
+                  </li>
+                  <li class="main-tours__item">
+                    <h4 class="main-tours__item-title">Akamas Peninsula</h4>
+                    <p class="main-tours__item-text">
+                      For nature lovers, we offer a tour of this reserve with
+                      crystal-clear waters, exotic plants, and scenic trails.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper swiperPlaces">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img"
+                      src="/img/main-tours-1.webp"
+                      alt="Landscape"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img"
+                      src="/img/main-tours-2.webp"
+                      alt="Village"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img"
+                      src="/img/main-tours-3.webp"
+                      alt="Mountains"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img"
+                      src="/img/main-tours-4.webp"
+                      alt="Beach"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img"
+                      src="/img/main-tours-5.webp"
+                      alt="Ruin"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img"
+                      src="/img/main-tours-6.webp"
+                      alt="Sea"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img"
+                      src="/img/main-tours-7.webp"
+                      alt="Village"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img"
+                      src="/img/main-tours-8.webp"
+                      alt="Landscape"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__cars main-cars">
+          <div class="container">
+            <div class="main-cars__inner">
+              <div class="main-cars__content">
+                <h3 class="main-cars__subtitle subtitle">
+                  Enjoy Cyprus in the comfort and safety
+                </h3>
+                <h2 class="main-cars__title section-title">
+                  Your Premium Ride Awaits
+                </h2>
+                <p class="main-cars__text">
+                  Each trip is not just an excursion, but an unforgettable
+                  journey where safety and comfort come first. Our experienced
+                  drivers will ensure you have the most enjoyable experience on
+                  board our vehicles, and a personalized approach will allow us
+                  to tailor the route to your preferences.
+                </p>
+              </div>
+              <div class="swiper swiperCars">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img"
+                      src="/img/car_5.webp"
+                      alt="Car"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img"
+                      src="/img/car_1.webp"
+                      alt="Car"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img"
+                      src="/img/car_2.webp"
+                      alt="Car"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img"
+                      src="/img/car_3.webp"
+                      alt="Car"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img"
+                      src="/img/car_4.webp"
+                      alt="Car"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <section class="footer__bottom footer-bottom" id="contacts">
+          <div class="container">
+            <div class="footer-bottom__inner">
+              <p class="footer-bottom__text">
+                We strive to make your journey unforgettable by offering
+                high-class services and a personalized approach. Contact us
+                today to start planning your next adventure!
+              </p>
+              <div class="footer-bottom__links">
+                <a href="mailto:info@domain.com" class="footer-bottom__link"
+                  >info@domain.com</a
+                >
+                <a href="tel:81234567890" class="footer-bottom__link"
+                  >+7 (123) 456-78-90</a
+                >
+              </div>
+              <div class="footer-bottom__logos">
+                <a href="#" class="footer-bottom__logo">
+                  <svg
+                    class="footer-bottom__svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 28 28"
+                    fill="white"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14 0.666748C6.63999 0.666748 0.666656 6.64008 0.666656 14.0001C0.666656 21.3601 6.63999 27.3334 14 27.3334C21.36 27.3334 27.3333 21.3601 27.3333 14.0001C27.3333 6.64008 21.36 0.666748 14 0.666748ZM20.1867 9.73342C19.9867 11.8401 19.12 16.9601 18.68 19.3201C18.4933 20.3201 18.12 20.6534 17.7733 20.6934C17 20.7601 16.4133 20.1868 15.6667 19.6934C14.4933 18.9201 13.8267 18.4401 12.6933 17.6934C11.3733 16.8268 12.2267 16.3468 12.9867 15.5734C13.1867 15.3734 16.6 12.2668 16.6667 11.9867C16.6759 11.9443 16.6747 11.9003 16.6631 11.8585C16.6515 11.8167 16.6298 11.7783 16.6 11.7468C16.52 11.6801 16.4133 11.7067 16.32 11.7201C16.2 11.7467 14.3333 12.9868 10.6933 15.4401C10.16 15.8001 9.67999 15.9868 9.25332 15.9734C8.77332 15.9601 7.86666 15.7068 7.18666 15.4801C6.34666 15.2134 5.69332 15.0668 5.74666 14.6001C5.77332 14.3601 6.10666 14.1201 6.73332 13.8668C10.6267 12.1734 13.2133 11.0534 14.5067 10.5201C18.2133 8.97342 18.9733 8.70675 19.48 8.70675C19.5867 8.70675 19.84 8.73342 20 8.86675C20.1333 8.97342 20.1733 9.12008 20.1867 9.22675C20.1733 9.30675 20.2 9.54675 20.1867 9.73342Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/js/swiper.js"></script>
+    <script type="module" src="/src/js/burger-menu.js"></script>
+  </body>
+</html>
