@@ -4,13 +4,13 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 50px;
 
   &__greeting {
-    padding-top: 40px;
+    padding-top: 50px;
   }
   &__cars {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
 }
 
@@ -106,7 +106,6 @@
   &__content {
     flex: 1 1 50%;
   }
-
   &__title {
     margin-bottom: 20px;
   }
