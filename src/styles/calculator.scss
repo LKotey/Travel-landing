@@ -1,0 +1,70 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__select {
+    width: 100%;
+    box-shadow: 0 0 30px $mainLight;
+    border: 1px solid $mainLight;
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: border 0.3s ease 0s;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid $mainDark;
+    }
+  }
+
+  &__label {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    align-items: center;
+    gap: 5px;
+  }
+  &__btn {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid $mainDark;
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: border 0.3s ease 0s, color 0.3s ease 0s;
+
+    &:hover {
+      border: 1px solid $acsentColor;
+      color: $acsentColor;
+    }
+
+    &:active {
+      border: 1px solid $mainDark;
+      color: $mainDark;
+    }
+  }
+
+  &__result {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  &__result-there {
+  }
+
+  &__result-there-num {
+  }
+
+  &__result-backAndForth,
+  &__result-there {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 0 30px $mainLight;
+    border: 2px solid $mainLight;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  &__result-backAndForth-num {
+  }
+}

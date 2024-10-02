@@ -57,6 +57,9 @@
                     <a class="header-menu__link" href="#contacts">Contacts</a>
                   </li>
                   <li class="header-menu__item">
+                    <a class="header-menu__link" href="#prices">Prices</a>
+                  </li>
+                  <li class="header-menu__item">
                     <a href="tel:81234567890" class="header-menu__link"
                       >+7 (123) 456-78-90</a
                     >
@@ -151,7 +154,7 @@
             <div class="main-tours__inner">
               <div class="main-tours__content">
                 <h3 class="main-tours__subtitle subtitle">
-                  Discover the beauty of Cyprus with us
+                  Discover the beauty of Cyprus
                 </h3>
                 <h2 class="main-tours__title section-title">
                   Here are some places where you can go
@@ -280,6 +283,107 @@
             </div>
           </div>
         </section>
+        <section class="main__prices main-prices" id="prices">
+          <div class="container">
+            <h3 class="main-prices__subtitle subtitle">
+              Choose the best fit for your trip
+            </h3>
+            <h2 class="main-prices__title section-title">Prices</h2>
+
+            <form class="main-prices__calculator calculator" id="calculator">
+              <label class="calculator__label"
+                >From
+                <select class="calculator__select" id="from" required>
+                  <option value="">Origin</option>
+                  <option value="Limasol">Limasol</option>
+                  <option value="Coral">Coral</option>
+                </select>
+              </label>
+
+              <label class="calculator__label"
+                >To
+                <select class="calculator__select" id="to" required>
+                  <option value="">Destination</option>
+                  <option value="Larnaka Airport">Larnaka Airport</option>
+                  <option value="Larnaka">Larnaka</option>
+                  <option value="Paphos Airport">Paphos Airport</option>
+                  <option value="Paphos">Paphos</option>
+                  <option value="Nicosia">Nicosia</option>
+                  <option value="Trodos">Trodos</option>
+                  <option value="Kikkos">Kikkos</option>
+                  <option value="Kourion-Kolossi">Kourion - Kolossi</option>
+                  <option value="Lefkara">Lefkara</option>
+                  <option value="Omodos">Omodos</option>
+                  <option value="Kyreniva">Kyreniva</option>
+                  <option value="Agianapa">Agianapa</option>
+                  <option value="Protaras">Protaras</option>
+                  <option value="Aphrodite Hills">Aphrodite Hills</option>
+                  <option value="Aphrodite Rock">Aphrodite Rock</option>
+                  <option value="Latch">Latch (Anassa)</option>
+                  <option value="Ercan Airport">Ercan Airport</option>
+                  <option value="Ag.Georgios">Ag.Georgios</option>
+                  <option value="Zigy">Zigy</option>
+                  <option value="Pissouri">Pissouri</option>
+                  <option value="Paphos Zoo">Paphos Zoo</option>
+                  <option value="Platres">Platres</option>
+                  <option value="Meniko">Meniko</option>
+                  <option value="Stavrovouni">Stavrovouni</option>
+                  <option value="Bay">Bay</option>
+                  <option value="Trimiklini">Trimiklini</option>
+                </select></label
+              >
+
+              <label class="calculator__label"
+                >Seats
+                <select class="calculator__select" id="passengers" required>
+                  <option value="4">4</option>
+                  <option value="6">6</option>
+                </select></label
+              >
+
+              <button class="calculator__btn" type="submit">
+                Get the price
+              </button>
+
+              <div class="calculator__result" id="result">
+                <div class="calculator__result-there">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48"
+                    />
+                  </svg>
+                  <div
+                    class="calculator__result-there-num"
+                    id="there-num"
+                  ></div>
+                </div>
+                <div class="calculator__result-backAndForth">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M17.78 2.72a.75.75 0 1 0-1.06 1.06l3.72 3.72H5.75a.75.75 0 0 0 0 1.5h14.69l-3.72 3.72a.75.75 0 1 0 1.06 1.06l5-5a.75.75 0 0 0 0-1.06zm-6.5 12.56a.75.75 0 1 0-1.06-1.06l-5 5a.75.75 0 0 0 0 1.06l5 5a.75.75 0 1 0 1.06-1.06L7.56 20.5h14.69a.75.75 0 0 0 0-1.5H7.56z"
+                    />
+                  </svg>
+                  <div
+                    class="calculator__result-backAndForth-num"
+                    id="backAndForth-num"
+                  ></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
         <section class="main__cars main-cars">
           <div class="container">
             <div class="main-cars__inner">
@@ -406,5 +510,6 @@
 
     <script type="module" src="/src/js/swiper.js"></script>
     <script type="module" src="/src/js/burger-menu.js"></script>
+    <script type="module" src="/src/js/calculator.js"></script>
   </body>
 </html>

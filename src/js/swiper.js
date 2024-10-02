@@ -23,7 +23,7 @@ const swiperCars = new Swiper(".swiperCars", {
       slidesPerView: 2,
     },
     910: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
   },
 });
