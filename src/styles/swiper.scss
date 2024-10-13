@@ -20,7 +20,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  height: 450px;
 
   &__img {
     display: inline-block;
@@ -30,6 +29,10 @@
     object-position: center;
     border-radius: 8px;
   }
+}
+
+.swiper-slide-cars {
+  height: 470px;
 }
 
 .swiper-button-next,
@@ -62,7 +65,7 @@
     height: 400px;
   }
 
-  .swiper-slide {
-    height: 350px;
+  .swiper-slide-cars {
+    height: 370px;
   }
 }

@@ -10,6 +10,7 @@
     width: 100%;
     box-shadow: 0 0 30px $mainLight;
     border: 1px solid $mainLight;
+    color: $mainDark;
     border-radius: 8px;
     padding: 0.5rem;
     transition: border 0.3s ease 0s;
@@ -32,6 +33,7 @@
     border: 1px solid $mainDark;
     border-radius: 8px;
     padding: 0.5rem;
+    color: $mainDark;
     transition: border 0.3s ease 0s, color 0.3s ease 0s;
 
     &:hover {
