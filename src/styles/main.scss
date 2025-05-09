@@ -118,6 +118,21 @@
   }
 }
 
+.main-minibus {
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+  &__content {
+    flex: 1 1 50%;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 910px) {
   .main-cars {
     &__inner {
@@ -128,6 +143,12 @@
     }
     &__content {
       flex: 1 1 20%;
+    }
+  }
+
+  .main-minibus {
+    &__inner {
+      flex-direction: column;
     }
   }
 }

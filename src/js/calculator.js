@@ -18,7 +18,7 @@ const priceData = {
   "Kourion-Kolossi/Limasol": { 4: [85, 150], 6: [120, 160] },
   "Kyreniva/Limasol": { 4: [200, 370], 6: [250, 460] },
   "Larnaca Airport/Limasol": { 4: [80, 140], 6: [120, 200] },
-  "Larnaka/Limasol": { 4: [90, 160], 6: [110, 200] },
+  "Larnaca/Limasol": { 4: [90, 160], 6: [110, 200] },
   "Latch/Limasol": { 4: [150, 280], 6: [200, 370] },
   "Lefkara/Limasol": { 4: [80, 140], 6: [110, 200] },
   "Limasol/Meniko": { 4: [115, 210], 6: [0, 0] },
