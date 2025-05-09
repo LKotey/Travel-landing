@@ -3,6 +3,18 @@
   flex-direction: column;
   gap: 20px;
 
+  &__result-backAndForth-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__result-backAndForth-sell {
+    color: rgb(39, 166, 229);
+  }
+
   &__select {
     -webkit-appearance: none;
     -moz-appearance: none;
